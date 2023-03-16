@@ -5,7 +5,7 @@ from aws_cdk import (
 )
 from constructs import Construct
 
-class AppStack(Stack):
+class HelloCdkStack(Stack):
 
     def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
@@ -14,6 +14,6 @@ class AppStack(Stack):
 
         # example resource
         # queue = sqs.Queue(
-        #     self, "AppQueue",
+        #     self, "HelloCdkQueue",
         #     visibility_timeout=Duration.seconds(300),
         # )
